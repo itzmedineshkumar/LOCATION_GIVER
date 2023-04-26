@@ -4,7 +4,7 @@ city = input("ENTER YOUR CITY NAME FOR LOCATION >>> ")
 aq = f"http://api.openweathermap.org/geo/1.0/direct?q={city}&appid={key}"
 data= requests.get(aq).json()
 b=len(data)
-print(b)
+print(b) #PRINTING THE DATA THAT IS INSIDE THE VARIABLE
 if b==1:
     lon=data[0]['lon']
     print(lon)
